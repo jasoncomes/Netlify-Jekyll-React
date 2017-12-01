@@ -39,7 +39,7 @@
   $('.js-scroll-trigger').click(function(e) {
     e.preventDefault();
     var targetPosition = $('.js-scroll-target' + $(this).attr('href')).offset().top;
-    var topOffset      = $(window).width() >= 980 ? 0 : $('.site-header').height();
+    var topOffset      = 81; // Height Of Sticky Navigation
     
     $('html, body').animate({scrollTop: targetPosition - topOffset}, 1000);
   });
@@ -52,24 +52,15 @@
  */
 (function($) {
 
-  $('#programs').waypoint({
+  $('body').waypoint({
     handler: function(direction) {
-
-
       if (direction == 'down') {
         $('body').addClass('is-nav-active');
-
-        // setTimeout(function(){
-        //   $('.nav-primary').addClass('slideIn');
-        // }, 1000);
       } else {
         $('body').removeClass('is-nav-active');
-
-        // setTimeout(function(){
-        //   $('.nav-primary').removeClass('slideIn');
-        // }, 1000);
       }
-    }
+    },
+    offset: -101
   });
 
 })(jQuery);
