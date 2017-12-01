@@ -1,0 +1,54 @@
+// Typography
+$base-font-family: 'Roboto', sans-serif;
+$heading-font-family: 'PT Serif', serif;
+$base-font-size: 16px;
+$base-line-height: (26 / 16);
+$heading-line-height: 1.4;
+
+
+// Colors
+$color-white:            #FFFFFF;
+$color-black:            #000000;
+$color-gray-light:       #f6f6f6;
+$color-gray:             #777777;
+$color-gray-dark:        #333333;
+$color-blue-light:       #e7eff7;
+$color-blue:             #466ecc;
+$color-green:            #00aa70;
+
+
+// Base Colors
+$base-background-color: $color-white;
+$base-font-color:       $color-gray-dark;
+$form-font-color:       $color-gray;
+$action-color:          $color-blue;
+
+
+// Border
+$base-border-color:     #dddddd;
+$base-border:           1px solid $base-border-color;
+$base-box-shadow:       0 8px 15px 4px rgba($color-black, .09);
+$base-border-radius:    5px;
+
+
+// Spacing
+$base-spacing: 25px;
+$small-spacing: 15px;
+$body-gutter: $base-spacing;
+$section-padding: 40px;
+
+
+// Sizing
+$widget-width: 350px;
+$widget-button-height: 50px;
+
+
+// Media
+$lap-start:     620px;
+$desk-start:    980px;
+$wall-start:    1250px;
+
+$palm-max:  100%;
+$lap-max:   100%;
+$desk-max:  #{$desk-start - $body-gutter * 2};
+$wall-max:  #{$wall-start - $body-gutter * 2};

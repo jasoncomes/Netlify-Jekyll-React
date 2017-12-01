@@ -1,0 +1,18 @@
+.wrapper {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 $body-gutter;
+  padding-bottom: $section-padding;
+  padding-top: $section-padding;
+  position: relative;
+
+  @media (min-width: $desk-start) {
+    max-width: $desk-max;
+    padding-right: #{$widget-width + $body-gutter * 2};
+  }
+
+  @media (min-width: $wall-start) {
+    max-width: $wall-max;
+  }
+}

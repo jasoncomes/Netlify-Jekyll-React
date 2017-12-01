@@ -1,0 +1,93 @@
+.is-modal-active {
+  overflow: hidden;
+}
+
+.modal-container {
+  background-color: rgba($color-black, .8);
+  bottom: 0;
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  .is-modal-active & {
+    display: block;
+  }
+}
+
+.modal {
+  background-color: $color-white;
+  bottom: 0;
+  box-shadow: 0 0 15px rgba($color-black, .9);
+  box-sizing: border-box;
+  left: 0;
+  padding: $base-spacing;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+
+  .link-close {
+    cursor: pointer;
+    display: block;
+    height: 18px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 18px;
+
+    path {
+      fill: $base-font-color;
+    }
+  }
+
+  .content {
+    [id^="modal-"] > :first-child {
+      margin-top: 0;
+    }
+
+    [id^="modal-"] > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $desk-start) {
+    border-radius: $base-border-radius;
+    bottom: initial;
+    left: 50%;
+    max-width: 60%;
+    right: initial;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+  }
+}
+
+[id^="modal-"] {
+  display: none;
+}
+
+#modal-video {
+  margin-top: 25px;
+
+  iframe {
+    min-height: 500px;
+
+    @media (min-height: 300px) {
+      min-height: 250px;
+    }
+
+    @media (min-height: 600px) {
+      min-height: 400px;
+    }
+
+    @media (min-height: 800px) {
+      min-height: 600px;
+    }
+  }
+}

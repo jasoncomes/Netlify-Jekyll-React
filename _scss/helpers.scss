@@ -1,0 +1,75 @@
+// Floats.
+.fl-left,
+.fl-center,
+.fl-right {
+  margin: $base-spacing 0;
+
+  @media (min-width: $lap-start) {
+    max-width: 325px;
+    width: 100%;
+  }
+}
+
+@media (min-width: $lap-start) {
+  .fl-right {
+    float: right;
+    margin: 0 0 $small-spacing $small-spacing;
+  }
+
+  .fl-left {
+    float: left;
+    margin: 0 $small-spacing $small-spacing 0;
+  }
+
+  .fl-center {
+    margin: $base-spacing auto;
+  }
+}
+
+// Text.
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-small {
+  font-size: 13px;
+  line-height: (22 / 13)
+}
+
+.text-large {
+  font-family: $heading-font-family;
+  font-size: 24px;
+  line-height: (34 / 24);
+}
+
+.text-legal {
+  font-size: 12px;
+  line-height: (20 / 12)
+}
+
+// Helpers
+.muted {
+  filter: alpha(opacity = 50);
+  opacity: .5;
+}
+
+.go::after {
+  content: ' »';
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.hide {
+  left: -9999px;
+  position: absolute;
+}

@@ -1,0 +1,17 @@
+.site-footer {
+  background-color: $color-gray-dark;
+  color: $color-white;
+  font-size: 14px;
+  line-height: (23 / 14);
+  margin-bottom: 50px;
+  text-align: center;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $desk-start) {
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
