@@ -39,7 +39,7 @@
   $('.js-scroll-trigger').click(function(e) {
     e.preventDefault();
     var targetPosition = $('.js-scroll-target' + $(this).attr('href')).offset().top;
-    var topOffset      = 81; // Height Of Sticky Navigation
+    var topOffset      = 80; // Height Of Sticky Navigation
     
     $('html, body').animate({scrollTop: targetPosition - topOffset}, 1000);
   });

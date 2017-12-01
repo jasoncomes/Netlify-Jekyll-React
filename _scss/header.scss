@@ -80,47 +80,50 @@
 
     a {
       color: $color-white;
+      display: block;
       font-size: 16px;
       line-height: 1;
     }
 
-    @media (min-width: $desk-start) {
-      .is-nav-active & {
-        -webkit-animation: slideIn .5s forwards;
-           -moz-animation: slideIn .5s forwards;
-             -o-animation: slideIn .5s forwards;
-                animation: slideIn .5s forwards;
-        background-color: $color-white;
-        box-shadow: 0px 4px 16px rgba($color-black, .08);
-        left: 0;
-        padding: $small-spacing 0;
-        position: fixed;
-        right: 0;
-        top: 0;
-        transform: translateY(-110%);
-        z-index: 2;
+    .is-nav-active & {
+      -webkit-animation: slideIn .5s forwards;
+         -moz-animation: slideIn .5s forwards;
+           -o-animation: slideIn .5s forwards;
+              animation: slideIn .5s forwards;
+      background-color: $color-white;
+      box-shadow: 0px 4px 16px rgba($color-black, .08);
+      left: 0;
+      padding: $small-spacing 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      transform: translateY(-110%);
+      z-index: 2;
 
-        ul {
-          box-sizing: border-box;
-          margin-left: auto;
-          margin-right: auto;
+      ul {
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+        @media (min-width: $desk-start) {
           max-width: $desk-max;
           padding: 0 #{$widget-width + $body-gutter * 2} 0 $body-gutter;
-
-          @media (min-width: $wall-start) {
-            max-width: $wall-max;
-          }
         }
 
-        a {
-          color: $base-font-color;
+        @media (min-width: $wall-start) {
+          max-width: $wall-max;
         }
+      }
+
+      a {
+        color: $base-font-color;
       }
     }
   }
 
   .logo {
-    width: calc(100% - #{$small-spacing});
+    width: 260px;
 
     path,
     rect {
@@ -129,6 +132,10 @@
       .is-nav-active & {
         fill: $base-font-color;
       }
+    }
+
+    @media (min-width: $desk-start) {
+      width: calc(100% - #{$small-spacing});
     }
   }
 

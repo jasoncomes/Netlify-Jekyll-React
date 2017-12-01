@@ -1,3 +1,7 @@
+.is-widget-active {
+  overflow: hidden;
+}
+
 .widget-container {
   @media (min-width: $desk-start) {
     left: calc(100% - #{$widget-width});
@@ -74,6 +78,7 @@
 
     .is-widget-active & {
       transform: translateY(0);
+      overflow-y: auto;
     }
   }
 
