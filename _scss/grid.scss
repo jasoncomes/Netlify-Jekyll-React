@@ -9,7 +9,7 @@
 
   @media (min-width: $desk-start) {
     max-width: $desk-max;
-    padding-right: #{$widget-width + $body-gutter * 2};
+    padding-right: #{$widget-width + $body-gutter};
   }
 
   @media (min-width: $wall-start) {

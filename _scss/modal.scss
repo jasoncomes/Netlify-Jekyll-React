@@ -26,6 +26,7 @@
   box-shadow: 0 0 15px rgba($color-black, .9);
   box-sizing: border-box;
   left: 0;
+  overflow: auto;
   padding: $base-spacing;
   position: absolute;
   right: 0;
@@ -47,11 +48,11 @@
   }
 
   .content {
-    [id^="modal-"] > :first-child {
+    [id^='modal-'] > :first-child {
       margin-top: 0;
     }
 
-    [id^="modal-"] > :last-child {
+    [id^='modal-'] > :last-child {
       margin-bottom: 0;
     }
   }
@@ -68,7 +69,7 @@
   }
 }
 
-[id^="modal-"] {
+[id^='modal-'] {
   display: none;
 }
 

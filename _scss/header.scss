@@ -4,12 +4,11 @@
   position: relative;
 
   @media (min-width: $desk-start) {
-    background-position: center -100px;
     height: calc(100vh - 150px);
   }
 
   &::after {
-    background-color: rgba($color-black, .7);
+    background-color: rgba($color-black, .5);
     bottom: 0;
     content: '';
     height: 100%;
@@ -20,7 +19,7 @@
     width: 100%;
 
     @media (min-width: $desk-start) {
-      background-color: rgba($color-black, .6);
+      background-color: rgba($color-black, .5);
     }
   }
 
@@ -68,12 +67,12 @@
       @media (min-width: $desk-start) {
         display: flex;
         float: left;
-        width: 22%;
+        width: 21%;
 
         &.header-logo {
           justify-content: left;
           text-align: left;
-          width: 34%;
+          width: 37%;
         }
       }
     }
@@ -81,7 +80,7 @@
     a {
       color: $color-white;
       display: block;
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1;
     }
 
@@ -104,7 +103,6 @@
         box-sizing: border-box;
         margin-left: auto;
         margin-right: auto;
-        
 
         @media (min-width: $desk-start) {
           max-width: $desk-max;
@@ -135,21 +133,26 @@
     }
 
     @media (min-width: $desk-start) {
-      width: calc(100% - #{$small-spacing});
+      width: 100%;
     }
   }
 
   .banner {
+    background-color: rgba($color-black, .65);
+    background:    -moz-linear-gradient(left, rgba($color-black, 0) 0%, rgba($color-black, .4) 2%, rgba($color-black, .4) 70%, rgba($color-black, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba($color-black, 0) 0%, rgba($color-black, .4) 20%, rgba($color-black, .4) 70%, rgba($color-black, 0) 100%);
+    background:         linear-gradient(to right, rgba($color-black, 0) 0%, rgba($color-black, .4) 20%, rgba($color-black, .4) 70%, rgba($color-black, 0) 100%);
+    box-sizing: border-box;
     color: $color-white;
-    left: 50%;
+    left: 0;
     list-style: none;
     margin: 0;
-    max-width: 350px;
-    padding: 0;
+    padding: $base-spacing;
     position: absolute;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
+    transform: translateY(-50%);
+    width: 100%;
     z-index: 1;
 
     li {
@@ -159,6 +162,7 @@
       margin: 0;
       margin-bottom: 10px;
       padding: 0;
+      text-align: center;
 
       &::before {
         background: transparent url('../img/icon-checkmark.svg') no-repeat left center / 16px auto;
@@ -175,14 +179,16 @@
     }
 
     @media (min-width: $desk-start) {
-      background-color: rgba($color-black, .65);
-      border-radius: 1px;
       left: $body-gutter;
-      padding: $base-spacing;
+      max-width: 450px;
+      padding-right: 50px;
+      right: inherit;
       transform: translateY(-50%);
+      width: 90%;
 
       li {
         font-size: 18px;
+        text-align: left;
       }
     }
   }

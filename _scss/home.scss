@@ -80,11 +80,31 @@ section {
 
 // Section: Hero Seperator
 .hero-seperator {
-  background: transparent url('../img/bg-hero-seperator.jpg') no-repeat center / cover;
+  background: transparent url('../img/bg-hero-seperator.jpg') no-repeat top center / cover;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    background-color: rgba($color-black, .7);
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+
+    @media (min-width: $desk-start) {
+      background-color: rgba($color-black, .7);
+    }
+  }
 
   .wrapper {
     padding-bottom: 200px;
     padding-top: 200px;
+    z-index: 1
   }
 }
 
