@@ -67,12 +67,12 @@
       @media (min-width: $desk-start) {
         display: flex;
         float: left;
-        width: 21%;
+        width: 25%;
 
         &.header-logo {
           justify-content: left;
           text-align: left;
-          width: 37%;
+          width: 50%;
         }
       }
     }
@@ -80,7 +80,7 @@
     a {
       color: $color-white;
       display: block;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1;
     }
 
@@ -121,6 +121,7 @@
   }
 
   .logo {
+    height: 60px;
     width: 260px;
 
     path,
