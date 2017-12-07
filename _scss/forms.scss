@@ -71,6 +71,10 @@ textarea {
   }
 }
 
+.is-invalid {
+  border-color: #ef4444;
+}
+
 textarea {
   resize: vertical;
 }
