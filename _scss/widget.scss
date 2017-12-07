@@ -98,15 +98,15 @@
 
   .widget-form {
     background: $color-white;
-    bottom: 0;
+    //bottom: 0;
     box-sizing: border-box;
-    left: 0;
+    //left: 0;
     padding: $base-spacing;
-    position: fixed;
-    right: 0;
-    top: 0;
-    transform: translateY(100%);
-    transition: transform .5s ease-out;
+    //position: fixed;
+    //right: 0;
+    //top: 0;
+    //transform: translateY(100%);
+    //transition: transform .5s ease-out;
     z-index: 1;
 
     @media (min-width: $desk-start) {
@@ -122,8 +122,8 @@
     }
 
     .is-widget-active & {
-      overflow-y: auto;
-      transform: translateY(0);
+      //overflow-y: auto;
+     // transform: translateY(0);
     }
   }
 
