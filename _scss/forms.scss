@@ -43,11 +43,14 @@ input[type='week'],
 select,
 select[multiple=multiple],
 textarea {
+  appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   background-color: $color-white;
   border: $base-border;
   border-radius: $base-border-radius;
   box-sizing: border-box;
+  box-shadow: none;
   color: $form-font-color;
   display: block;
   font-size: 16px;
@@ -72,7 +75,7 @@ textarea {
 }
 
 .is-invalid {
-  border-color: #ef4444;
+  border-color: $color-red;
 }
 
 textarea {
@@ -93,6 +96,10 @@ input[type='file'] {
 select {
   background: $color-white url('../img/arrow-dropdown.svg') no-repeat right 10px center / 10px auto;
   padding-right: 35px;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .input-columns {
