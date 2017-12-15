@@ -36,9 +36,14 @@
 
   .link-close {
     background: transparent url('../img/icon-close.svg') center / 18px;
+    border-radius: 0;
+    box-shadow: none;
     cursor: pointer;
     display: block;
     height: 18px;
+    margin: 0;
+    min-width: inherit;
+    padding: 0;
     position: absolute;
     right: 15px;
     top: 15px;
