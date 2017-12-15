@@ -1,0 +1,33 @@
+form {
+  margin: 100px auto;
+  width: 500px;
+  position: relative;
+}
+
+form.is-loading::after {
+  background: rgba(255, 255, 255, .8) url('./loading.gif') no-repeat center / 200px;
+  bottom: 0;
+  content: '';
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  background: white;
+  border: 1px solid #cccccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
