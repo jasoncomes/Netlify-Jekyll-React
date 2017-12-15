@@ -11,13 +11,15 @@ Jekyll is the Static Site Build System, it is used for paritals, markdown, layou
 
 ### Commands to work locally
 
-- `gem install jekyll bundler` - Install jekyll Gem
+**`gem install jekyll bundler`**
+
+Installation of the Jekyll Gem
 
 **`jekyll serve` or `bundle exec jekyll serve`**
 
 Jekyll also comes with a built-in development server that will allow you to preview what the generated site will look like in your browser locally. A development server will run at http://localhost:4000/
 
-** `jekyll build` or `bundle exec jekyll build`**
+**`jekyll build` or `bundle exec jekyll build`**
 
 The current folder will be generated into ./_site. The contents of `_site` are automatically cleaned, by default, when the site is built. 
 
