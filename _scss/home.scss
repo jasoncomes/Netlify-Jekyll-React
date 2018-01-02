@@ -76,11 +76,15 @@ section {
   circle {
     fill: currentColor;
   }
+
+  .icon-affordablity path {
+    stroke: currentColor;
+    fill: transparent;
+  }
 }
 
 // Section: Hero Seperator
 .hero-seperator {
-  background: transparent url('../img/bg-hero-seperator.jpg') no-repeat top center / cover;
   position: relative;
   z-index: 0;
 
@@ -108,6 +112,18 @@ section {
   }
 }
 
+
+// Section: Hero Seperator - Faith
+.hero-faith {
+  background: transparent url('../img/bg-faith.jpg') no-repeat top center / cover; 
+}
+
+
+// Section: Hero Seperator - Online Courses
+.hero-online-courses {
+  background: transparent url('../img/bg-hero-seperator.jpg') no-repeat top center / cover;
+}
+
 // Section: Financing Options
 .financing-options {
   background-color: $color-gray-light;
@@ -132,7 +148,7 @@ section {
     margin-right: 15px;
     width: calc(20% - 12px);
 
-    &:last-of-type {
+    &:nth-of-type(5n) {
       margin-right: 0;
     }
 
@@ -174,4 +190,9 @@ section {
       vertical-align: middle;
     }
   }
+}
+
+// Section: Faith
+.faith {
+  background-color: $color-gray-light;
 }
