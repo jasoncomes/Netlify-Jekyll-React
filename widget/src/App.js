@@ -9,8 +9,8 @@ const acodeUndergrad   = 'D85351'
 const acodeGrad        = 'D85352'
 const testMode         = false
 
-class App extends React.Component {
 
+class App extends React.Component {
 
     // Construct.
     constructor(props) {
@@ -72,7 +72,7 @@ class App extends React.Component {
         }
     }
 
-    
+
     // Build Programs Logic
     setupPrograms = (programs) => {
 
