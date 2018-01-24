@@ -1,7 +1,7 @@
 # Site settings
-title:       Liberty
-tagline:     Basic example of a Jekyll site with Sass enabled.
-email:       jcomes@highereducation.com
+title:      Liberty University
+tagline:    Take the first step toward your future with one of our many 100% online programs of study.
+email:      jcomes@highereducation.com
 baseurl:    "" # the subpath of your site, e.g. /blog
 url:        "" # the base hostname & protocol for your site, e.g. http://example.com
 
