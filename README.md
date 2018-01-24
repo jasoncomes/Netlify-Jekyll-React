@@ -1,9 +1,11 @@
-# OPM Liberty Landing Page
+# Liberty University Landing Page
 
 ## Table of Contents
 - [Setup](#setup)
 - [Landing Page](#landing-page)
 - [Widget](#widget)
+- [Visuals - Desktop](Visual-Desktop.pdf)
+- [Visuals - Mobile](Visual-Mobile.pdf)
 
 ## Setup
 
