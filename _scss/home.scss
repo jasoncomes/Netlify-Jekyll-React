@@ -146,10 +146,29 @@ section {
   li {
     float: left;
     margin-right: 15px;
-    width: calc(20% - 12px);
+    width: calc(50% - 7.5px);
+    
+    @media (max-width: $lap-start - 1px) {
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
 
-    &:nth-of-type(5n) {
-      margin-right: 0;
+    @media (min-width: $lap-start) and (max-width: $desk-start - 1px) {
+      width: calc(25% - 11.25px);
+
+       &:nth-of-type(4n) {
+        margin-right: 0;
+      }
+    }
+
+    @media (min-width: $desk-start) {
+      margin-right: 15px;
+      width: calc(20% - 12px);
+
+      &:nth-of-type(5n) {
+        margin-right: 0;
+      }
     }
 
     img {
